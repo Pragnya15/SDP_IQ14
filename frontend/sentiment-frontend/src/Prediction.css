@@ -1,0 +1,92 @@
+/* Prediction Container */
+
+.prediction-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(230, 230, 230, 0.8); /* Use a slightly darker background */
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #cdc8c800;
+  backdrop-filter: blur(10px); /* Blur effect for glass appearance */
+}
+
+
+.prediction-form {
+  display: flex;
+  flex-direction: column; /* Maintains vertical stacking */
+  justify-content: center; /* Centers elements along the main axis */
+  align-items: center;  /* Centers elements along the cross axis */
+}
+
+
+/* Prediction Title */
+.prediction-title {
+  font-size: 40px; /* Increased size */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f08080; /* Pink color */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; /* New font */
+}
+
+/* Prediction Textarea */
+.prediction-textarea {
+  width: 100%;
+  height: 180px; /* Increased height */
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  background-color: #fff; /* Removed transparency */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.prediction-textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+.prediction-button {
+  padding: 12px 32px; /* Increased padding for icon */
+  font-size: 20px;
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: flex; /* Added for icon */
+  align-items: center; /* Added for icon */
+}
+
+.prediction-button:hover {
+  background: #0067bd; /* Different hover color */
+  transform: scale(1.03);
+}
+
+.prediction-button i { /* Added for icon */
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 18px;
+  color: #fff;
+}
+
+
+/* Prediction Classification */
+.prediction-classification {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+#review{
+  color:black;
+}
