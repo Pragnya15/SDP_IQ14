@@ -101,8 +101,12 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Prediction.css'; // Import CSS file for styling
+import style from './Predict.module.css'
+// import './Prediction.css'; // Import CSS file for styling
 import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 
 function Prediction() {
   const [category, setCategory] = useState('');
@@ -129,20 +133,39 @@ function Prediction() {
   };
 
   return (
-    <div className="prediction-container">
-      <h2 className="prediction-title">Fake Review Analysis</h2>
-      <form onSubmit={handleSubmit} className="prediction-form">
-        <input type="text" value={category} placeholder="Enter the category" onChange={(e) => setCategory(e.target.value)} className="prediction-input" />
-        <textarea value={text} placeholder="Enter the review" onChange={(e) => setText(e.target.value)} className="prediction-textarea" />
-        <button type="submit" className="prediction-button" disabled={isLoading}>
-          {isLoading ? 'Predicting...' : 'Predict'}
-        </button>
-      </form>
-      {error && <p className="error-message">{error}</p>}
-      {classification && <p className="prediction-classification">Classification: {classification}</p>}
+    // <div className="prediction-container">
+    //   <h2 className="prediction-title">Fake Review Analysis</h2>
+    //   <form onSubmit={handleSubmit} className="prediction-form">
+    //     <input type="text" value={category} placeholder="Enter the category" onChange={(e) => setCategory(e.target.value)} className="prediction-input" />
+    //     <textarea value={text} placeholder="Enter the review" onChange={(e) => setText(e.target.value)} className="prediction-textarea" />
+    //     <button type="submit" className="prediction-button" disabled={isLoading}>
+    //       {isLoading ? 'Predicting...' : 'Predict'}
+    //     </button>
+    //   </form>
+    //   {error && <p className="error-message">{error}</p>}
+    //   {classification && <p className="prediction-classification">Classification: {classification}</p>}
 
-      <div className="button-container">
-        <Link to="/reviews"><button>Existing Reviews</button></Link>
+    //   <div className="button-container">
+    //     <Link to="/reviews"><button>Existing Reviews</button></Link>
+    //   </div>
+    // </div>
+
+    <div className={`${style.wrapper}`}>
+      <div className={`${style.container}`}>
+          <h4 className={`${style.heading}`}>Fake Review Detection System</h4>
+          <Form onSubmit={handleSubmit}>
+      <Form.Group className="mb-3" >
+        <Form.Label className={`${style.label}`}  >Product Category</Form.Label>
+        <Form.Control type="text" placeholder="Product Category..." value={category} onChange={(e) => setCategory(e.target.value)} />
+      </Form.Group>
+      <Form.Group className="mb-3" >
+        <Form.Label className={`${style.label}`}>Enter the Product Review</Form.Label>
+        <Form.Control as="textarea" rows={3} value={text} onChange={(e) => setText(e.target.value)} placeholder='Write the review...'/>
+      </Form.Group>
+      <Button variant="success" className="mb-3" type='submit' disabled={isLoading} >{isLoading ? 'Predicting...' : 'Predict'}</Button>
+    </Form>
+    {error && <p className="error-message">{error}</p>}
+      {classification==="Fake" && <h5 className={`${style.showclass}`}>Classification: <h5 className={`${style.determine}`}>{classification}</h5></h5>}
       </div>
     </div>
   );

@@ -1,0 +1,19 @@
+.outer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inner-div {
+  height: 25rem;
+  width: 100rem;
+  /* background-color: rgb(243, 219, 243); */
+  background-color: whitesmoke;
+  margin-top: 3%;
+  text-align: center;
+  padding: 50px;
+}
+.container{
+    padding: 10px;
+}
