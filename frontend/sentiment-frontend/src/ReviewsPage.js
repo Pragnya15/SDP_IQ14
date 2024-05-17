@@ -30,9 +30,9 @@ function ReviewsPage() {
           <Card border="info" className={`${style.fixed_card}`}>
             <Card.Header>{i + index + 1}</Card.Header>
             <Card.Body>
-              <Card.Title className={`${style.font_weight}`}>
+              <Card.Text className={`${style.font_weight}`}>
                 {review.text}
-              </Card.Title>
+              </Card.Text>
               <Card.Text className={`${style.font_color}`}>
                 Classification: {review.classification}
               </Card.Text>
