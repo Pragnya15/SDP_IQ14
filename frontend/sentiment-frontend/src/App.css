@@ -1,9 +1,8 @@
-.navbar{
-    width: 100vw;
-    position: sticky;
-    top: 0;
+.navbar {
+  width: 100vw;
+  position: sticky;
+  top: 0;
 }
-.nav-div{
-    text-decoration: none;
-    
+.nav-div {
+  text-decoration: none;
 }

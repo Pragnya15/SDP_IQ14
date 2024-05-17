@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .inner-div {
@@ -14,6 +15,6 @@
   text-align: center;
   padding: 50px;
 }
-.container{
-    padding: 10px;
+.container {
+  padding: 10px;
 }

@@ -1,35 +1,37 @@
-.wrapper{
-display: flex;
-justify-content:center ;
-align-items: center;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: lavender;
+  height: 25rem;
+  width: 50rem;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  border-radius: 20px;
+  box-shadow: 5px 5px gray;
 }
-.container{
-background-color: lavender;
-height: 25rem;
-width: 50rem;
-margin-top: 30px;
-text-align: center;
-justify-content: center;
-align-items: center;
-
-padding-left: 100px;
-padding-right: 100px;
-padding-top: 25px;
-border-radius: 20px;
-box-shadow: 5px 5px gray;
+.heading {
+  color: darkmagenta;
 }
-.heading{
-    color: darkmagenta;
+.label {
+  font-weight: 700;
+  color: darkslategrey;
 }
-.label{
-    font-weight: 700;
-    color: darkslategrey;
+.showclass {
+  font-weight: 700;
+  color: navy;
 }
-.showclass{
-    font-weight: 700;
-    color: navy;
+.determine {
+  color: rgb(122, 19, 19);
 }
-.determine{
-    color: rgb(122, 19, 19);
+.determine1 {
+  color: green;
 }

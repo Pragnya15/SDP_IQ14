@@ -27,7 +27,6 @@ function Home() {
             reviews. Using a combination of sophisticated algorithms and manual
             investigation, we analyze patterns, inconsistencies, and suspicious
             activity to identify fraudulent reviews. <br />
-            
             <hr /> Our platform empowers users to make informed decisions and
             navigate the digital marketplace with confidence. Whether you're a
             savvy shopper, a conscientious consumer, or simply curious about the

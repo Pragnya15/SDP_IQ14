@@ -1,0 +1,26 @@
+.fixed_card {
+  width: 18rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.font_weight {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+.font_color {
+  font-weight: 700;
+  color: darkblue;
+}
+.heading {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: darkblue;
+}
+.outer_container {
+  width: auto;
+  overflow-x: hidden;
+}
